@@ -4,9 +4,9 @@
  * @returns totalSum - the total of all numbers in inputArray
  */
 
-function returnTotalSum(inputArray: (string | number)[]) {
+function returnTotalSum(inputArray: (string | number)[]): number {
   const numbersArray = inputArray.filter(
-    (element): element is number => typeof element === "number"
+    (element): element is number  => typeof element === "number"
   );
 
   const totalSum = numbersArray.reduce(
