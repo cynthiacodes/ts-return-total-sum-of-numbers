@@ -6,7 +6,7 @@
 
 function returnTotalSum (inputArray : (string | number )[]){
 
-    const numbersArray   = inputArray.filter(element => typeof element === "number");
+    const numbersArray   = inputArray.filter((element): element is number => typeof element === "number");
 
     const totalSum = numbersArray.reduce ((accumulator, currentNumber) => accumulator + currentNumber, 0);
 
