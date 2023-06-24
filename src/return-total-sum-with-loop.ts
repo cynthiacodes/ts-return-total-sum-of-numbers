@@ -10,10 +10,9 @@ function returnTotalSum (inputArray : (string | number )[]){
         if (typeof element === "number"){
             totalSum += element;
         }
-    return totalSum;
     }
 
-    return 0;
+    return totalSum;
 }
 
 export default returnTotalSum;
